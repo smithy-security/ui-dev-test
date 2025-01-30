@@ -1,0 +1,38 @@
+body {
+    font-family: Helvetica, 'Trebuchet MS', Verdana, sans-serif;
+}
+
+//-------------------
+// Typography styles
+//-------------------
+h6 {
+    font-weight: 600;
+}
+
+// normal links
+a:hover {
+    text-decoration: underline;
+}
+
+// button links
+a.border:hover,
+div [role='menu'] a:hover {
+    text-decoration: none;
+}
+
+.error-text,
+.ErrorMessage {
+    color: var(--destructive);
+    font-size: 0.8em;
+}
+
+.PageTitle {
+    margin-top: 0;
+
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+    }
+}

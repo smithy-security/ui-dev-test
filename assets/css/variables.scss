@@ -1,0 +1,51 @@
+*,
+:after,
+:before {
+    border: 0 solid #c5c8cf;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(222.2 84% 4.9%);
+    --muted: hsl(210 40% 96.1%);
+    --muted-foreground: hsl(217, 17%, 46%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(222.2 84% 4.9%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(222.2 84% 4.9%);
+    --border: hsl(214.3 31.8% 91.4%);
+    --border-dark: #c5c8cf;
+    --input: hsl(214.3 31.8% 91.4%);
+    --primary: hsl(222.2 47.4% 11.2%);
+    --primary-hover: hsl(221, 18%, 40%);
+    --primary-foreground: hsl(210 40% 98%);
+    --secondary: hsl(210 40% 96.1%);
+    --secondary-hover: hsl(208, 35%, 90%);
+    --secondary-foreground: hsl(222.2 47.4% 11.2%);
+    --accent: hsl(210 40% 96.1%);
+    --accent-foreground: hsl(222.2 47.4% 11.2%);
+    --destructive: #e53935;
+    --destructive-foreground: hsl(210 40% 98%);
+    --ring: hsl(222.2 84% 4.9%);
+    --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+    --blue-100: #eef2ff;
+    --blue-200: #dfe6ff;
+    --blue-300: #a9b9f4;
+    --blue-600: #2563eb;
+    --orange-600: #ff8904;
+    --yellow-600: #ffc107;
+    --red-100: #fef5f5;
+    --red-200: #ffe3e3;
+    --red-600: #e53935;
+    --green-600: #43a047;
+    /* Border Radius */
+    --radius: 0.5rem;
+
+    /* Accordion & Collapsible Keyframes */
+    --radix-accordion-content-height: 0;
+    --radix-collapsible-content-height: 0;
+}
