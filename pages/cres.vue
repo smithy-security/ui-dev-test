@@ -2,12 +2,12 @@
     <div class="PageTitle">
         <p class="subtitle">
             A visual explorer of Open Common Requirement Enumerations (CREs).
-            Originally created by:
+            Originally created by Zeljko Obrenovic.
             <a
-                target="_blank"
                 href="https://zeljkoobrenovic.github.io/opencre-explorer/"
-                >Zeljko Obrenovic</a
-            >.
+                target="_blank"
+                >Link</a
+            >
         </p>
     </div>
     <div class="MainContent">
@@ -15,7 +15,7 @@
             <AlertTitle>Error</AlertTitle>
             <AlertDescription>{{ error }}</AlertDescription>
         </Alert>
-        <pre>{{ cres }}</pre>
+        <CreList :cres="cres"></CreList>
         <template v-if="loading && cres.length === 0">
             <Skeleton />
             <Skeleton />
@@ -29,9 +29,11 @@ import { Alert, AlertDescription, AlertTitle } from '~/components/shadcn/alert';
 import { Skeleton } from '~/components/shadcn/skeleton';
 import { useUIStore } from '~/stores/ui-interactions';
 import { useCreStore } from '~/stores/cres';
+import CreList from '~/components/cres/CreList.vue';
 
 export default defineNuxtComponent({
     components: {
+        CreList,
         AlertDescription,
         AlertTitle,
         Alert,
@@ -74,7 +76,7 @@ export default defineNuxtComponent({
     }
 }
 
-.List,
+.CresList,
 .Pagination {
     grid-column: 1 / -1;
 }

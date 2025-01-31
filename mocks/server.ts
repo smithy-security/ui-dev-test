@@ -4,16 +4,17 @@ import { CresMock } from '@/mocks/cres';
 export function makeServer() {
     const server = createServer({
         routes: function () {
-            // CREs
             this.get('/api/v1/cres', (schema: any, request) => {
                 const allCREs = CresMock;
+                // sort by date created
 
+                // search by tag
+
+                // add pagination
                 return {
                     cres: allCREs,
                 };
             });
-
-            //let the rest of the api calls through
             this.passthrough();
         },
     });

@@ -6,4 +6,6 @@ describe('CRE list page', () => {
     it('The list of CREs shows correct data', () => {});
 
     it('Pagination works', () => {});
+    it('Sorting works', () => {});
+    it('Filtering works', () => {});
 });
