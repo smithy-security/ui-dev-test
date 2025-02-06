@@ -16,16 +16,15 @@
     </div>
 </template>
 <script lang="ts">
-import { mapState } from 'pinia';
+import { Cre } from '~/mocks/cres';
 import {
-    Table as CmTable,
-    TableBody,
-    TableCaption,
     TableHead,
-    TableHeader,
     TableRow,
+    TableHeader,
+    TableCaption,
+    TableBody,
+    Table as CmTable,
 } from '~/components/shadcn/table';
-import { useCreStore } from '~/stores/cres';
 import CreRow from '~/components/cres/CreRow.vue';
 
 export default {
@@ -39,8 +38,11 @@ export default {
         TableBody,
         CmTable,
     },
-    computed: {
-        ...mapState(useCreStore, ['cres', 'error']),
+    props: {
+        cres: {
+            type: Object as PropType<Cre[]>,
+            required: true,
+        },
     },
 };
 </script>
