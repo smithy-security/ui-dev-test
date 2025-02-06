@@ -13,9 +13,7 @@ import { makeServer } from '~/mocks/server';
 const useIdFunction = () => useId();
 const runtimeConfig = useRuntimeConfig();
 
-if (runtimeConfig.public.mocking && runtimeConfig.public.mocking != 'false') {
-    makeServer();
-}
+makeServer();
 
 useHead({
     title: 'Tech test',

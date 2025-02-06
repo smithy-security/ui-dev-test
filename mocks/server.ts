@@ -6,11 +6,9 @@ export function makeServer() {
         routes: function () {
             this.get('/api/v1/cres', (schema: any, request) => {
                 const allCREs = CresMock;
-                // sort by date created
+                const queryParams = request.queryParams;
+                const count = queryParams['count'];
 
-                // search by tag
-
-                // add pagination
                 return {
                     cres: allCREs,
                 };

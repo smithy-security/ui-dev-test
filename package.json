@@ -4,9 +4,7 @@
     "description": "Smithy SAAS UI",
     "scripts": {
         "dev": "nuxt dev -p 5002",
-        "dev-with-mock": "NUXT_PUBLIC_MOCKING=true nuxt dev -p 5002",
         "build": "nuxt build",
-        "build-with-mock": "NUXT_PUBLIC_MOCKING=true nuxt build",
         "start": "npx serve .output/public",
         "format": "npx prettier --write .",
         "analyze": "nuxt analyze",
@@ -18,7 +16,6 @@
     },
     "dependencies": {
         "@pinia/nuxt": "^0.8.0",
-        "lodash.clonedeep": "^4.5.0",
         "lucide-vue-next": "^0.462.0",
         "nuxt": "^3.14.1592",
         "pinia": "^2.2.8",
@@ -28,7 +25,6 @@
     },
     "devDependencies": {
         "@nuxt/eslint": "^0.7.3",
-        "@types/lodash.clonedeep": "^4.5.9",
         "@types/uuid": "^10.0.0",
         "cypress": "^13.16.0",
         "eslint": "^9.15.0",
@@ -38,7 +34,6 @@
         "miragejs": "^0.2.0-alpha.3",
         "prettier": "3.4.1",
         "sass": "^1.81.0",
-        "start-server-and-test": "^2.0.9",
         "typescript": "^5.7.2"
     }
 }

@@ -12,11 +12,6 @@ export default defineNuxtConfig({
     alias: {
         '@/components': './components',
     },
-    runtimeConfig: {
-        public: {
-            mocking: process.env.NUXT_PUBLIC_MOCKING,
-        },
-    },
     app: {
         head: {
             htmlAttrs: { lang: 'en' },
